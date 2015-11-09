@@ -1,121 +1,259 @@
-body {
-  background-attachment: fixed;
-  background-image: url("images.jpeg");
-  background-repeat:repeat;
+
+/*/////////////////////////////screen between 200px-767px////////////////////////*/
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    body {
+      background-color: grey;
+      text-align: justify;
+    }
+
+    header {
+      height:50px;
+      background-image: url("../media/logo_git.jpeg");
+      background-repeat:no-repeat;
+      margin:auto;
+      font-size:1em;
+      text-align: center;
+      color:black;
+      font-family:verdana;
+      font-weight:bold;
+      border-bottom-width : 2px;
+      border-bottom-style : solid;
+      border-bottom-color:black;
+      border-radius: 5px;
+    }
+
+    h1 {
+    font-size:1.5em;
+    }
+
+    div {
+      width:100%;
+      float:left;
+    }
+
+    table  {
+      font-family:verdana;
+      font-size:0.8em;
+      border:none;
+      color:white;
+      width:100%
+    }
+
+    code {
+        background-color: #B22020;
+        border-radius: 15px;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+        font-family: Arial;
+        margin:10px 0;
+    }
+
+    .tleft {
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    td, th {
+      border:solid 1px #C0C0C0;
+      text-align: center;
+    }
+
+    th {
+      font-size: 18px;
+    }
+
+    aside {
+      display: none;
+      width:30%;
+      float:left;
+      min-width:380px;
+    }
+
 }
 
-header {
-  height:90px;
-  margin-bottom:20px;
-  margin-left:300px;
-  margin-right:300px;
-  font-size:24px;
-  text-align: center;
-  line-height:90px;
-  color:white;
-  font-family:verdana;
-  font-weight:bold;
 
-  border-bottom-width : 2px;
-  border-bottom-style : solid;
-  border-bottom-color:black;
-  background-color:#F42323;
-  border-radius: 1.5em;
+/*/////////////////////////////screen between 768px-1023px////////////////////////*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      background-color: grey;
+    }
+
+    header {
+      height:50px;
+      background-image: url("../media/logo_git.jpeg");
+      background-repeat:repeat-x;
+      margin:auto;
+      font-size:1em;
+      text-align: center;
+     color:black;
+      font-family:verdana;
+      font-weight:bold;
+      border-bottom-width : 2px;
+      border-bottom-style : solid;
+      border-bottom-color:black;
+      border-radius: 5px;
+    }
+
+    h1 {
+    font-size:1.5em;
+    }
+
+    div {
+      width:100%;
+      float:left;
+    }
+
+    table  {
+      font-family:verdana;
+      font-size:0.8em;
+      border:none;
+      color:white;
+      width:100%
+    }
+
+    code {
+        background-color: #B22020;
+        border-radius: 15px;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+        font-family: Arial;
+        margin:10px 0;
+    }
+
+    .tleft {
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    td, th {
+      border:solid 1px #C0C0C0;
+      text-align: center;
+    }
+
+    th {
+      font-size: 18px;
+    }
+
+    aside {
+      display: none;
+      width:30%;
+      float:left;
+      min-width:380px;
+    }
 }
 
-section {
-  width:70%;
-  float:left;
-}
 
-h2 {
-  text-align: center;
-  color:white;
-}
+/*/////////////////////////////screen between 1024px-1500px////////////////////////*/
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    body {
+      background-color: grey;
+    }
 
-h3 {
-  color:white;
-  text-align: center;
-}
+    header {
+      height:90px;
+      background-image: url("../media/logo_git.jpeg");
+      background-repeat:repeat-x;
+      margin-bottom:20px;
+      margin-left:300px;
+      margin-right:300px;
+      font-size:3em;
+      text-align: center;
+      line-height:90px;
+      color:black;
+      font-family:verdana;
+      font-weight:bold;
+      border-bottom-width : 2px;
+      border-bottom-style : solid;
+      border-bottom-color:black;
+      border-radius: 1.5em;
+    }
 
-aside {
-  width:30%;
-  float:left;
-  min-width:380px;
-}
+    h1 {
+    font-size:1.5em;
+    }
 
-table  {
-  font-family:verdana;
-  font-size:16px;
-  border:none;
-  color:white;
-  width:100%
-}
+    div {
+      width:70%;
+      float:left;
+    }
 
-td, th {
-  border:solid 1px #C0C0C0;
-}
+    table  {
+      font-family:verdana;
+      font-size:16px;
+      border:none;
+      color:white;
+      width:100%
+    }
 
-td {
-  text-align: center;
-}
+    code {
+        background-color: #B22020;
+        border-radius: 15px;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+        font-family: Arial;
+        margin:10px 0;
+    }
 
-th {
-  font-size: 24px;
-  text-align: center;
-}
+    .tleft {
+      text-align: left;
+      padding-left: 10px;
+    }
 
-.clear {
-  clear:both;
-}
+    td, th {
+      border:solid 1px #C0C0C0;
+      text-align: center;
+    }
 
-.container-aside {
-  border:solid 1px #C0C0C0;
-}
+    th {
+      font-size: 24px;
+    }
 
-footer {
-  padding:24px;
-  text-align:center;
-  color:white;
-}
+    aside {
+      width:30%;
+      float:left;
+      min-width:380px;
+    }
 
-ul {
-  list-style: none;
-  font-size: 12px;
-  padding: 12px;
-  padding-right:12px;
-}
+    .container-aside {
+      border:solid 1px #C0C0C0;
+    }
 
-.left,.right {
-  width:49%;
-  display:inline-block;
-  margin:0;
-  padding:0;
-}
+    h2 {
+      text-align: center;
+      color:white;
+    }
 
-.left li,.right li {
-  height:30px;
-}
+    .left,.right {
+      width:49%;
+      display:inline-block;
+      margin:0;
+      padding:0;
+      background-color:#B22020;
+    }
 
-.left {
-  background-color:#B22020;
-}
+    h3 {
+      color:white;
+      text-align: center;
+    }
 
-.right {
-  background-color:#9B7B7B;
-}
+    ul {
+      list-style: none;
+      /*little point of bullets doesn't appear*/
+      font-size: 12px;
+      padding: 12px;
+      padding-right:12px;
+    }
 
-code {
-    background-color: #9B7B7B;
-    border-radius: 15px;
-    color: white;
-    padding: 5px 10px;
-    display: inline-block;
-    font-family: Arial;
-    margin:10px 0;
-}
+    .left li,.right li {
+      height:30px;
+    }
 
-.tleft {
-  text-align: left;
-  padding-left: 10px;
+    .clear {
+      clear:both;
+    }
+    /*to stop the float*/
+
 }

@@ -1,254 +1,369 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="fr">
+
+<head>
     <meta charset="utf-8">
     <title>cheat sheet git</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--mobiles devices!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+</head>
 
-  </head>
-  <body id="haut">
+<body id="haut">
     <header>
-      GIT / GITHUB
+        <h1>GIT / GITHUB</h1>
     </header>
-    <section>
-      <table>
-        <tr>
-          <th>COMMANDE</th>
-          <th>ACTION</th>
-        </tr>
-        <tr>
-          <td><code>git init</code></td>
-          <td class="tleft">Créer un dépôt Git vide ou réinitialiser un existant</td>
-        </tr>
-        <tr>
-          <td><code>mkdir</code></td>
-          <td class="tleft">Créer un répertoire vide</td>
-        </tr>
-        <tr>
-          <td><code>touch</code></td>
-          <td class="tleft">Créer un fichier vide</td>
-        </tr>
-        <tr>
-          <td><code>ls</code></td>
-          <td class="tleft">Lister</td>
-        </tr>
-        <tr>
-          <td><code>ls -A</code></td>
-          <td class="tleft">Lister tout, y compris les fichiers cachés</td>
-        </tr>
-        <tr>
-          <td><code>cd</code></td>
-          <td class="tleft">Se déplacer dans un répertoire</td>
-        </tr>
-        <tr>
-          <td><code>cd ..</code></td>
-          <td class="tleft">Remonter d'un étage</td>
-        </tr>
-        <tr>
-          <td><code>cd../../</code></td>
-          <td class="tleft">Remonter de 2 étages</td>
-        </tr>
-        <tr>
-          <td><code>pwd</code></td>
-          <td class="tleft">Afficher l'endroit ou l'on est</td>
-        </tr>
-        <tr>
-          <td><code>git add</code></td>
-          <td class="tleft">Ajouter le contenu de fichiers dans l'index </br> (en staging : fichier modifié mais pas envoyé)</td>
-        </tr>
-        <tr>
-          <td><code>git add --all</code> ou <code>git add *</code> </br> (* : select group of files)</td>
-          <td class="tleft">Pour tout ajouter dans l'index </br> (en staging : fichier modifié mais pas envoyé)</td>
-        </tr>
-        <tr>
-          <td><code>git bisect</code></td>
-          <td class="tleft">Trouver par recherche binaire la modification qui a introduit un bogue</td>
-        </tr>
-        <tr>
-          <td><code>git branch</code></td>
-          <td class="tleft">Lister, créer ou supprimer des branches</td>
-        </tr>
-        <tr>
-          <td><code>git checkout</code></td>
-          <td class="tleft">Extraire une branche ou des chemins dans la copie de travail</td>
-        </tr>
-        <tr>
-          <td><code>git checkout <u>+ sha du commit</u></code></td>
-          <td class="tleft">Détailler le commit</td>
-        </tr>
-        <tr>
-          <td><code>git clone</code></td>
-          <td class="tleft">Cloner un dépôt dans un nouveau répertoire </br> Récupérer la totalité d'un dossier</td>
-        </tr>
-        <tr>
-          <td><code>git commit -m "message"</code></td>
-          <td class="tleft">Enregistrer les modifications dans le dépôt en les nommant</td>
-        </tr>
-        <tr>
-          <td><code>git diff</code></td>
-          <td class="tleft">Afficher les changements entre les validations, entre validation et copie de travail</td>
-        </tr>
-        <tr>
-          <td><code>git fetch</code></td>
-          <td class="tleft">Télécharger les objets et références depuis un autre dépôt</td>
-        </tr>
-        <tr>
-          <td><code>git grep</code></td>
-          <td class="tleft">Afficher les lignes correspondant à un motif</td>
-        </tr>
-        <tr>
-          <td><code>git log</code> <code>git log -n2</code></td>
-          <td class="tleft">Afficher l'historique des validations </br> Détailler les 2 derniers commit enregistrés</td>
-        </tr>
-        <tr>
-          <td><code>git log -p <u>+ nom du fichier</u></code></td>
-          <td class="tleft">Afficher l'historique de tout ce qui a été fait dans le fichier </br> Analyser le dépôt</td>
-        </tr>
-        <tr>
-          <td><code>git merge</code></td>
-          <td class="tleft">Fusionner deux ou plusieurs historiques de développement ensemble</td>
-        </tr>
-        <tr>
-          <td><code>git branch -d <u>+ nom du fichier</u></code> ou <code>git br -d <u>+ nom du fichier</u></td>
-          <td class="tleft">Supprimer les branches après les avoir merger</td>
-        </tr>
-        <tr>
-          <td><code>git mv</code></td>
-          <td class="tleft">Déplacer ou renommer un fichier, un répertoire, ou un lien symbolique</td>
-        </tr>
-        <tr>
-          <td><code>git pull</code></td>
-          <td class="tleft">Rapatrier et intégrer un autre dépôt ou une branche locale, la dernière modification apportée</td>
-        </tr>
-        <tr>
-          <td><code>git push</code></td>
-          <td class="tleft">Mettre à jour les références distantes ainsi que les objets associés</td>
-        </tr>
-        <tr>
-          <td><code><u>nom du paquet</u> -v</code> ou <code><u>nom du paquet</u> --version</code></td>
-          <td class="tleft">Vérifier si un paquet est installé et quelle est sa version</td>
-        </tr>
-        <tr>
-          <td><code>cat</code></td>
-          <td class="tleft">Afficher le contenu du dossier</td>
-        </tr>
-        <tr>
-          <td><code>git rebase</code></td>
-          <td class="tleft">Reporter les validations locales sur le sommet mis à jour d'une branche amont</td>
-        </tr>
-        <tr>
-          <td><code>git reset</code></td>
-          <td class="tleft">Réinitialiser la HEAD courante à l'état spécifié</td>
-        </tr>
-        <tr>
-          <td><code>git revert</code></td>
-          <td class="tleft">Défaire ce qui a été fait à ce moment là</td>
-        </tr>
-        <tr>
-          <td><code>git rm</code></td>
-          <td class="tleft">Supprimer des fichiers de la copie de travail et de l'index</td>
-        </tr>
-        <tr>
-          <td><code>git rm -r</code></td>
-          <td class="tleft">Supprimer des fichiers avec toutes ses dépendances</td>
-        </tr>
-        <tr>
-          <td><code>git status</code></td>
-          <td class="tleft">Afficher le statut de la copie de travail</td>
-        </tr>
-        <tr>
-          <td><code>git help <u>+ command</u></code></td>
-          <td class="tleft">Lister les sous-commandes disponibles</td>
-        </tr>
-        <tr>
-          <td><code>ctrl L</code> ou <code>clear</code></td>
-          <td class="tleft">Nettoyer le terminal</td>
-        </tr>
-        <tr>
-          <td><code>history</code></td>
-          <td class="tleft">Afficher l'historique</td>
-        </tr>
-        <tr>
-          <td><code><u>flèche du haut</u></code></td>
-          <td class="tleft">Voir la dernière commande faite</td>
-        </tr>
-        <tr>
-          <td><code>man <u>+ commande</u></code></td>
-          <td class="tleft">Détailler la commande et ses options</td>
-        </tr>
-        <tr>
-          <td><code>.gitignore</code></td>
-          <td class="tleft">Dossier contenant les fichiers cachés</td>
-        </tr>
-      </table>
-    </section>
+    <div>
+        <table>
+            <tr>
+                <th>COMMANDE</th>
+                <th>ACTION</th>
+            </tr>
+            <tr>
+                <td>
+                    <code>git init</code>
+                </td>
+                <td class="tleft">Créer un dépôt Git vide ou réinitialiser un existant</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>mkdir</code>
+                </td>
+                <td class="tleft">Créer un répertoire vide</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>touch</code>
+                </td>
+                <td class="tleft">Créer un fichier vide</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>ls</code>
+                </td>
+                <td class="tleft">Lister</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>ls -A</code>
+                </td>
+                <td class="tleft">Lister tout, y compris les fichiers cachés</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>cd</code>
+                </td>
+                <td class="tleft">Se déplacer dans un répertoire</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>cd ..</code>
+                </td>
+                <td class="tleft">Remonter d'un étage</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>cd../../</code>
+                </td>
+                <td class="tleft">Remonter de 2 étages</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>pwd</code>
+                </td>
+                <td class="tleft">Afficher l'endroit ou l'on est</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git add</code>
+                    <p><a href="#haut">Retour haut de page</a></p>
+                </td>
+
+                <td class="tleft">
+                    <p>Ajouter le contenu de fichiers dans l'index</p>
+                    <p>(en staging : fichier modifié mais pas envoyé)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git add --all</code> ou
+                    <code>git add *</code>
+                    <p> (* : select group of files)</p>
+                </td>
+                <td class="tleft">
+                    <p>Pour tout ajouter dans l'index </p>
+                    <p>(en staging : fichier modifié mais pas envoyé)</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <code>git bisect</code>
+                </td>
+                <td class="tleft">Trouver par recherche binaire la modification qui a introduit un bogue</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git branch</code>
+                </td>
+                <td class="tleft">Lister, créer ou supprimer des branches</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git checkout</code>
+                </td>
+                <td class="tleft">Extraire une branche ou des chemins dans la copie de travail</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git checkout <u>+ sha du commit</u></code>
+                </td>
+                <td class="tleft">Détailler le commit</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git clone</code>
+                </td>
+                <td class="tleft">
+                    <p>Cloner un dépôt dans un nouveau répertoire </p>
+                    <p> Récupérer la totalité d'un dossier</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git commit -m "message"</code>
+                </td>
+                <td class="tleft">Enregistrer les modifications dans le dépôt en les nommant</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git diff</code>
+                </td>
+                <td class="tleft">Afficher les changements entre les validations, entre validation et copie de travail</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git fetch</code>
+                </td>
+                <td class="tleft">Télécharger les objets et références depuis un autre dépôt</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git grep</code>
+                </td>
+                <td class="tleft">Afficher les lignes correspondant à un motif</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git log</code>
+                    <code>git log -n2</code>
+                </td>
+                <td class="tleft">
+                    <p>Afficher l'historique des validations </p>
+                    <p>Détailler les 2 derniers commit enregistrés</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git log -p <u>+ nom du fichier</u></code>
+                </td>
+                <td class="tleft">
+                    <p>Afficher l'historique de tout ce qui a été fait dans le fichier </p>
+                    <p> Analyser le dépôt</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git merge</code>
+                    <p><a href="#haut">Retour haut de page</a></p>
+                </td>
+                <td class="tleft">Fusionner deux ou plusieurs historiques de développement ensemble</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git branch -d <u>+ nom du fichier</u></code> ou
+                    <code>git br -d <u>+ nom du fichier</u></code>
+                </td>
+                <td class="tleft">Supprimer les branches après les avoir merger</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git mv</code>
+                </td>
+                <td class="tleft">Déplacer ou renommer un fichier, un répertoire, ou un lien symbolique</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git pull</code>
+                </td>
+                <td class="tleft">Rapatrier et intégrer un autre dépôt ou une branche locale, la dernière modification apportée</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git push</code>
+                </td>
+                <td class="tleft">Mettre à jour les références distantes ainsi que les objets associés</td>
+            </tr>
+            <tr>
+                <td>
+                    <code><u>nom du paquet</u> -v</code> ou
+                    <code><u>nom du paquet</u> --version</code>
+                </td>
+                <td class="tleft">Vérifier si un paquet est installé et quelle est sa version</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>cat</code>
+                </td>
+                <td class="tleft">Afficher le contenu du dossier</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git rebase</code>
+                </td>
+                <td class="tleft">Reporter les validations locales sur le sommet mis à jour d'une branche amont</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git reset</code>
+                </td>
+                <td class="tleft">Réinitialiser la HEAD courante à l'état spécifié</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git revert</code>
+                </td>
+                <td class="tleft">Défaire ce qui a été fait à ce moment là</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git rm</code>
+                </td>
+                <td class="tleft">Supprimer des fichiers de la copie de travail et de l'index</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git rm -r</code>
+                </td>
+                <td class="tleft">Supprimer des fichiers avec toutes ses dépendances</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git status</code>
+                </td>
+                <td class="tleft">Afficher le statut de la copie de travail</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>git help <u>+ command</u></code>
+                </td>
+                <td class="tleft">Lister les sous-commandes disponibles</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>ctrl L</code> ou
+                    <code>clear</code>
+                </td>
+                <td class="tleft">Nettoyer le terminal</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>history</code>
+                </td>
+                <td class="tleft">Afficher l'historique</td>
+            </tr>
+            <tr>
+                <td>
+                    <code><u>flèche du haut</u></code>
+                </td>
+                <td class="tleft">Voir la dernière commande faite</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>man <u>+ commande</u></code>
+                </td>
+                <td class="tleft">Détailler la commande et ses options</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>.gitignore</code>
+                    <p><a href="#haut">Retour haut de page</a></p>
+                </td>
+                <td class="tleft">Dossier contenant les fichiers cachés</td>
+            </tr>
+        </table>
+    </div>
     <aside>
-      <div class="container-aside">
-        <h2>WORKFLOW</h2>
-        <div class="left">
-          <h3>Terminal</h3>
-        <ul>
-            <li>1. cd <u>+name of repository</u></li>
-            <li>2. git init</li>
-            <li>3. touch .gitignore</li>
-            <li>4. touch index.html</li>
-            <li>5. mkdir css</li>
-            <li>6. mkdir js</li>
-            <li>7. atom . (create html/css)</li>
-            <li>8. git add -A</li>
-            <li>9. git commit -m "msge"</li>
-            <li>10. git status</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>13. paste git remote</li>
-            <li>&nbsp;</li>
-            <li>15. paste git push</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>18. git branch gh-pages</li>
-            <li>19. git checkout gh-pages</li>
-            <li>20. git branch</li>
-            <li>21. git status</li>
-            <li>&nbsp;</li>
-        </ul>
-      </div>
-      <div  class="right">
-        <h3>Github</h3>
-        <ul>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>11. create new repository</li>
-            <li>12. copy git remote</li>
-            <li>&nbsp;</li>
-            <li>14. copy git push</li>
-            <li>&nbsp;</li>
-            <li>16. Github page : create new branch "gh-pages"</li>
-            <li>&nbsp;</li>
-            <li>17. update gh-pages branch to default branch</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>22. retrieve the url</li>
-        </ul>
-      </div>
-      </div>
+        <div class="container-aside">
+            <h2>WORKFLOW</h2>
+            <div class="left">
+                <h3>Terminal</h3>
+                <ul>
+                    <li>1. cd <u>+name of repository</u></li>
+                    <li>2. git init</li>
+                    <li>3. touch .gitignore</li>
+                    <li>4. touch index.html</li>
+                    <li>5. touch favicon.ico</li>
+                    <li>6. mkdir css</li>
+                    <li>7. cd css</li>
+                    <li>8. touch style.css</li>
+                    <li>9. mkdir js</li>
+                    <li>10. atom . (create html/css)</li>
+                    <li>11. git add -A</li>
+                    <li>12. git commit -m "msge"</li>
+                    <li>13. git status</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>16. paste git remote</li>
+                    <li>&nbsp;</li>
+                    <li>18. paste git push</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>22. git branch gh-pages</li>
+                    <li>23. git checkout gh-pages</li>
+                    <li>24. git branch</li>
+                    <li>25. git status</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>Github</h3>
+                <ul>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>14. create new repository</li>
+                    <li>15. copy git remote</li>
+                    <li>&nbsp;</li>
+                    <li>17. copy git push</li>
+                    <li>&nbsp;</li>
+                    <li>19. Github page : create new branch "gh-pages"</li>
+                    <li>&nbsp;</li>
+                    <li>21. update gh-pages branch to default branch</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>26. retrieve the url</li>
+                </ul>
+            </div>
+
+        </div>
 
     </aside>
     <div class="clear"></div>
-    <footer>
-      <p>
-        <a href="#haut">Retour haut de page</a>
-      </p>
-    </footer>
-  </body>
+</body>
+
 </html>
